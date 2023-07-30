@@ -1,37 +1,38 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "ad_trappist",
   "version": "${version}",
-  "name": "ModName",
-  "description": "",
+  "name": "Ad Trappist",
+  "description": "Addon for Ad Astra including the 7 planets of the TRAPPIST-1 system",
   "authors": [
-    ""
+    "Atom596"
   ],
   "contributors": [
+    "AlexNijjar's Template Mod"
   ],
   "contact": {
     "website": "https://modrinth.com/mod/modid",
-    "repo": "https://github.com/terrarium-earth/${github_name}",
-    "issues": "https://github.com/terrarium-earth/${github_name}/issues"
+    "repo": "https://github.com/Pale-Champion-Atom596/TRAPPIST-1",
+    "issues": "https://github.com/Pale-Champion-Atom596/TRAPPIST-1/issues"
   },
   "license": "Terrarium Licence",
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "earth.terrarium.modid.fabric.ModIdFabric",
-      "earth.terrarium.modid.ModId::postInit"
+      "com.atom596.ad_trappist.fabric.AdTrappistFabric",
+      "com.atom596.ad_trappist.AdTrappist::postInit"
     ],
     "client": [
-      "earth.terrarium.modid.client.fabric.ModIdClientFabric"
+      "com.atom596.ad_trappist.fabric.client.AdTrappistClientFabric"
     ],
     "modmenu": [
-      "earth.terrarium.modid.common.config.fabric.ModMenuConfig"
+      "com.atom596.ad_trappist.fabric.common.config.ModMenuConfig"
     ]
   },
   "mixins": [
-    "modid.mixins.json",
-    "modid-common.mixins.json"
+    "ad_trappist.mixins.json",
+    "ad_trappist-common.mixins.json"
   ],
   "depends": {
     "fabric": "*",
